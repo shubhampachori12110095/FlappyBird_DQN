@@ -1,6 +1,9 @@
 # FlappyBird_DQN
 This program uses the Deep Reinforcement Learning to play the Flappy Bird, the origin paper of this method is ["Playing Atari with Deep Reinforcement Learning"](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf) 
 
+## Acknowledgement:
+This project is based on the work of https://github.com/yenchenlin/DeepLearningFlappyBird, Many thanks to his inspired. 
+
 ## Pre-Requisite
 * tensorflow 1.1.0
 * python 2.7.x
@@ -56,6 +59,14 @@ def image_processing(self, image):
 	return image_resize
 ```
 I trained the network by using the `GTX1080 Ti` for about `12 hours`(about `4500000` time steps) and the highest score of the results is `264`. It was much better than what I played.
+
+### 3. Test the DQN
+The test process is just following the below:
+```bash
+cd root_of_this_code/
+python test.py
+```
+
 
 
 
