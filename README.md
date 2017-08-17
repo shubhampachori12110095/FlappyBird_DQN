@@ -2,7 +2,7 @@
 This program uses the Deep Reinforcement Learning to play the Flappy Bird, the origin paper of this method is ["Playing Atari with Deep Reinforcement Learning"](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf) 
 
 ## Acknowledgement:
-This project is based on the work of https://github.com/yenchenlin/DeepLearningFlappyBird, Many thanks to his inspired. 
+This project is based on the work of https://github.com/yenchenlin/DeepLearningFlappyBird, Many thanks to his inspiring. 
 
 ## Pre-Requisite
 * tensorflow 1.1.0
