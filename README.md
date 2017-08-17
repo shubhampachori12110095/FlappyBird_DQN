@@ -10,10 +10,34 @@ This program uses the Deep Reinforcement Learning to play the Flappy Bird, the o
 
 ## Instruction to run the code:
 ### 1. Substitute the background of the OpenAI gym and change the reward
-Firstly,  we need to substitute the background image of OpenAI gym. The substitute images are in the 'assets_substitute' folder. The background images in the openai gym should in the path: 'PyGame-Learning-Environment-master/ple/games/flappybird/assets'.  
+Firstly,  we need to substitute the background image of OpenAI gym. The substitute images are in the 'assets_substitute' folder. The background images in the openai gym should in the path: `PyGame-Learning-Environment-master/ple/games/flappybird/assets`.  
   
-Secondly
+Secondly, we need to change the reward of the game, the file is in the path: `PyGame-Learning-Environment-master/ple/games/base/pygamewrapper.py`. Then change the reward as follows:
+```python
+def __init__(self, width, height, actions={}):
 
+        # Required fields
+        self.actions = actions  # holds actions
+
+        self.score = 0.0  # required.
+        self.lives = 0  # required. Can be 0 or -1 if not required.
+        self.screen = None  # must be set to None
+        self.clock = None  # must be set to None
+        self.height = height
+        self.width = width
+        self.screen_dim = (width, height)  # width and height
+        self.allowed_fps = None  # fps that the game is allowed to run at.
+        self.NOOP = K_F15  # the noop key
+        self.rng = None
+
+        self.rewards = {
+            "positive": 0.9,
+            "negative": -1.0,
+            "tick": 0.1,
+            "loss": -1.1,
+            "win": 5.0
+        }
+```
 
 ### 2. Train the DQN
 The training process is just following the below:
@@ -31,7 +55,7 @@ def image_processing(self, image):
 	image_resize = cv2.resize(gray_image, (80, 80))
 	return image_resize
 ```
-I trained the network by using the 'GTX1080 Ti' for about '12 hours'(about '4500000' time steps) and the highest score of the results is '264'. It was much better than what I played.
+I trained the network by using the `GTX1080 Ti` for about `12 hours`(about `4500000` time steps) and the highest score of the results is `264`. It was much better than what I played.
 
 
 
