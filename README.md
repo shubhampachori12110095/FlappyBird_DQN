@@ -2,13 +2,14 @@
 This program uses the Deep Reinforcement Learning to play the Flappy Bird, the origin paper of this method is ["Playing Atari with Deep Reinforcement Learning"](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf) 
 
 ## Pre-Requisite
-tensorflow 1.1.0
-python 2.7.x
-openai gym
-openai gym_ple
-opencv-python
+* tensorflow 1.1.0
+* python 2.7.x
+* OpenAI gym
+* OpenAI gym_ple
+* OpenCV-python
 
-## How to use the code
+## Instruction to run the code:
+
 
 
 
