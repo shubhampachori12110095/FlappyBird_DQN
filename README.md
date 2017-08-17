@@ -13,7 +13,7 @@ This project is based on the work of https://github.com/yenchenlin/DeepLearningF
 
 ## Instruction to run the code:
 ### 1. Substitute the background of the OpenAI gym and change the reward
-Firstly,  we need to substitute the background image of OpenAI gym. The substitute images are in the 'assets_substitute' folder. The background images in the openai gym should in the path: `PyGame-Learning-Environment-master/ple/games/flappybird/assets`.  
+Firstly,  we need to substitute the background image of OpenAI gym. The substitute images are in the `assets_substitute` folder. The background images in the openai gym should in the path: `PyGame-Learning-Environment-master/ple/games/flappybird/assets`. You can also revise the source code of the game, the file is in the path: `PyGame-Learning-Environment-master/ple/games/flappybird/__init__.py`.
   
 Secondly, we need to change the reward of the game, the file is in the path: `PyGame-Learning-Environment-master/ple/games/base/pygamewrapper.py`. Then change the reward as follows:
 ```python
