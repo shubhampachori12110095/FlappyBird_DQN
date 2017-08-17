@@ -67,7 +67,8 @@ cd root_of_this_code/
 python test.py
 ```
 ### 4. Related Papers
-[1] Mnih, Volodymyr, et al. "Playing atari with deep reinforcement learning." arXiv preprint arXiv:1312.5602 (2013).
+[1] Mnih, Volodymyr, et al. "Playing atari with deep reinforcement learning." arXiv preprint arXiv:1312.5602 (2013).  
+
 [2] K. Arulkumaran, M. Deisenroth, M. Brundage, and A. A. Bharath, “A Brief Survey of Deep Reinforcement Learning,” IEEE Signal Processing Magazine, 2017. 
 
 
