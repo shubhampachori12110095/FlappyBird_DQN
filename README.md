@@ -5,11 +5,11 @@ This program uses the Deep Reinforcement Learning to play the Flappy Bird, the o
 This project is based on the work of https://github.com/yenchenlin/DeepLearningFlappyBird, Many thanks to his inspiring. 
 
 ## Pre-Requisite
-* tensorflow 1.1.0
-* python 2.7.x
-* OpenAI gym
-* OpenAI gym_ple
-* OpenCV-python
+* Tensorflow 1.1.0
+* Python 2.7.x
+* OpenAI Gym
+* OpenAI Gym_ple
+* OpenCV-Python
 
 ## Instruction to run the code:
 ### 1. Substitute the background of the OpenAI gym and change the reward
